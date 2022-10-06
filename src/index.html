@@ -11,12 +11,11 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
-
+    
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       
       <fieldset>
-        <legend>Personal info</legend>
+        <legend>Personal information</legend>
         <label class="form-field">
           Surname:
           <input
@@ -59,7 +58,7 @@
         </label>
     
         <label class="form-field">
-          I accept the terms of the agreement
+          I accept the term of the agreement
           <input type="checkbox" required>
         </label>
       </fieldset>
@@ -67,7 +66,7 @@
       <fieldset>
         <legend>Registration</legend>
         <label class="form-field">
-          Email:
+          E-mail:
           <input type="email"
             name="email"
             placeholder="email@example.com"
@@ -112,7 +111,11 @@
   
         <label class="form-field">
           What time do you go to bed?
-          <input type="time" name="bedtime">
+          <input
+            type="time"
+            name="bedtime"
+            step="1"
+          >
         </label>
   
         <label class="form-field">
@@ -126,7 +129,12 @@
   
         <label class="form-field">
           How do you rate our work?
-          <input type="range">
+          <input
+            type="range"
+            value="1"
+            min="1"
+            max="10"
+          >
         </label>
       </fieldset>
   
